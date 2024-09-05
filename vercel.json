@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "B2014612.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "10mb"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "B2014612.py"
+      }
+    ]
+  }
+  
